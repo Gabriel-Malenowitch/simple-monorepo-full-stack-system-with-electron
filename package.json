@@ -1,16 +1,14 @@
 {
-  "name": "simple-monorepo-full-stack-system-and-electron",
+  "name": "simple-monorepo-full-stack-system-with-electron",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "./public/electron/main.js",
   "license": "MIT",
   "scripts": {
-    "dev": "tsc -w & webpack-dev-server ./public",
+    "dev": "tsc -w & webpack-dev-server ./public & electron .",
     "build": "webpack ./public",
     "test": "test"
   },
   "devDependencies": {
-    "nx": "16.6.0",
-    "nx-cloud": "latest",
     "@babel/cli": "^7.22.9",
     "@babel/core": "^7.22.9",
     "@babel/eslint-parser": "^7.22.9",
@@ -22,11 +20,23 @@
     "@types/react-dom": "^18.2.7",
     "babel-loader": "^9.1.3",
     "concurrently": "^8.2.0",
-    "eslint": "^8.46.0",
+    "eslint": "^8.47.0",
     "eslint-config-airbnb-base": "^15.0.0",
     "eslint-config-prettier": "^8.9.0",
+    "eslint-config-react-app": "^7.0.1",
+    "eslint-import-resolver-typescript": "^3.5.5",
+    "eslint-plugin-folders": "^1.0.4",
+    "eslint-plugin-grouped-import": "^1.0.3",
+    "eslint-plugin-import-alias": "^1.2.0",
     "eslint-plugin-jest": "^27.2.3",
+    "eslint-plugin-mocha": "^10.1.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "eslint-plugin-react-hook-form": "^0.3.0",
+    "eslint-plugin-unicorn": "^46.0.1",
+    "nx": "16.6.0",
+    "nx-cloud": "latest",
     "path": "^0.12.7",
+    "prettier": "^2.8.8",
     "tsc": "^2.0.4",
     "typescript": "^5.1.6",
     "webpack": "^5.88.2",
@@ -34,6 +44,7 @@
     "webpack-dev-server": "^4.15.1"
   },
   "dependencies": {
+    "electron": "^25.5.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },

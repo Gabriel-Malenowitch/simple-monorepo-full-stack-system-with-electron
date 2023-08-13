@@ -40,7 +40,7 @@ module.exports={
         /** "open" 
          * opens the browser after server is successfully started
         */
-        open: true,
+        open: false,
         /** "hot"
          * enabling and disabling HMR. takes "true", "false" and "only". 
          * "only" is used if enable Hot Module Replacement without page 
